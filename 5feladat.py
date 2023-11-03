@@ -28,3 +28,11 @@ while True:
     else:
         print("Adj egy számot megint.")
 '''
+
+import random
+
+random_szamok = [num for num in [random.randint(1, 12) for _ in range(20)] if num % 3 == 0]
+
+print("Az eredeti véletlenszámok:", random_szamok)
+
+print("A 3-mal osztható számok darabszáma:", len(random_szamok))
